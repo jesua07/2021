@@ -31,7 +31,7 @@ if (!is_array($jogos)) {
     </head>
     <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="index.html">Etec Games</a>
+        <a class="navbar-brand" href="index.html"><h1 class="textoEtecNavbar">Etec Games</h1></a>
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="telaInicial.php">Cadastro</a>

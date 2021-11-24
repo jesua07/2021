@@ -79,3 +79,20 @@
  .fotoDesenvolvedores{
   border: 1px solid #61D7A8; 
  }
+ 
+ .segundoTitulo{
+  color: #55c99a;
+ }
+
+ .textoEtecNavbar{
+  color: #55c99a;
+  font-size: 25px;
+ }
+
+ .textoEtecNavbar:hover{
+  color: #47a881;
+  font-size: 25px;
+  transition: 0.1s;
+ }
+
+
