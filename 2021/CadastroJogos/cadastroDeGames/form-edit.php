@@ -31,13 +31,13 @@ if (!is_array($jogos)) {
     </head>
     <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="index.html"><h1 class="textoEtecNavbar">Etec Games</h1></a>
+        <a class="navbar-brand" href="index.html"><h1 class="textoEtecNavbar">ETEC GAMES</h1></a>
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="telaInicial.php">Cadastro</a>
+            <a class="nav-link" href="telaInicial.php">CADASTRO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
+            <a class="nav-link" href="sobrenos.html">SOBRE NÓS</a>
           </li>
         </ul>
       </nav>
@@ -47,7 +47,7 @@ if (!is_array($jogos)) {
         <h1>Sistema de cadastro de Jogos</h1>
         <hr>
         </div>
-        <h2>Edição de Jogo</h2>
+        <h2 class="titulo">Edição de Jogo</h2>
         <br><br>
         <form action="edit.php" method="post">
             <div class="row">

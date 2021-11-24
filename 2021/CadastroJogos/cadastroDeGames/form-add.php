@@ -6,17 +6,18 @@ require 'init.php';
     <head>
         <meta charset="utf-8">
         <title>Cadastro de Jogo</title>
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
     <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="index.html"><h1 class="textoEtecNavbar">Etec Games</h1></a>
+        <a class="navbar-brand" href="index.html"><h1 class="textoEtecNavbar">ETEC GAMES</h1></a>
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="telaInicial.php">Cadastro</a>
+            <a class="nav-link" href="telaInicial.php">CADASTRO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
+            <a class="nav-link" href="sobrenos.html">SOBRE NÓS</a>
           </li>
         </ul>
       </nav>
@@ -26,7 +27,7 @@ require 'init.php';
         <h1>Sistema de cadastro de Jogos</h1>
         <hr>
         </div>
-        <h2>Cadastro de Jogo</h2>
+        <h2 class="titulo">Cadastro de Jogo</h2>
         <br><br>
         <form action="add.php" method="post">
             <div class="row">

@@ -8,7 +8,7 @@
     color: #61D7A8;
   }
   
-  a.btn{
+  a.btn btn-first{
     margin: 30px 10px;
     width: 150px;
     padding: 10px;
@@ -65,7 +65,7 @@
   margin: 8px;
 }
   .titulo {
-    color: #00AB94;
+    color: rgb(3, 190, 165);
   }
 
   .botaoGit {
@@ -94,5 +94,4 @@
   font-size: 25px;
   transition: 0.1s;
  }
-
 

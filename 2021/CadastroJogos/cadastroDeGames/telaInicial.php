@@ -27,19 +27,19 @@ $stmt->execute();
     <head>
         <meta charset="utf-8">
         <title>Sistema de Cadastro de Jogos</title>
-
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     </head>
     <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="index.html"><h1 class="textoEtecNavbar">Etec Games</h1></a>
+        <a class="navbar-brand" href="index.html"><h1 class="textoEtecNavbar">ETEC GAMES</h1></a>
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="telaInicial.php">Cadastro</a>
+            <a class="nav-link" href="telaInicial.php">CADASTRO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
+            <a class="nav-link" href="sobrenos.html">SOBRE NÓS</a>
           </li>
         </ul>
       </nav>
@@ -49,7 +49,7 @@ $stmt->execute();
         <h1>Sistema de Cadastro de Jogos</h1>
         <hr>
         </div>
-        <h2>Lista de Jogos</h2>
+        <h2 class="titulo">Lista de Jogos</h2>
         <p>Total de Jogos: <?php echo $total ?></p>
         <?php if ($total > 0): ?>
             <div class="shadow p-3 mb-5 bg-white rounded">
