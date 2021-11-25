@@ -44,7 +44,7 @@ if (!is_array($jogos)) {
       <br><br>
         <div class="container">
             <div class="page-header">
-        <h1>Sistema de cadastro de Jogos</h1>
+        <h1>Sistema de Cadastro de Jogos</h1>
         <hr>
         </div>
         <h2 class="titulo">Edição de Jogo</h2>
