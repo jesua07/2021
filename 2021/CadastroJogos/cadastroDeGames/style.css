@@ -99,3 +99,31 @@
   transition: 0.1s;
  }
 
+ table.tabelaVerdinha {
+   font-family: sans-serif;
+  background-color: #FFFFFF;
+  width:100%;
+  border-collapse: collapse;
+}
+table.tabelaVerdinha td, table.tabelaVerdinha th {
+  border: 0px solid #555555;
+  padding: 10px 10px;
+}
+table.tabelaVerdinha tbody td {
+  font-size: 16px;
+  text-align: center;
+  color: #000000;
+}
+table.tabelaVerdinha thead {
+  background: #00AB94;
+}
+table.tabelaVerdinha thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.meioGrande{
+  width: 100%;
+}
