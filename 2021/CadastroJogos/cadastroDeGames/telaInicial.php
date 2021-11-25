@@ -28,6 +28,7 @@ $stmt->execute();
         <meta charset="utf-8">
         <title>Sistema de Cadastro de Jogos</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="/imagens/ETEC.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     </head>
@@ -80,7 +81,7 @@ $stmt->execute();
                             <td><?php echo $jogos['especsMin'] ?></td>
                             <td><?php echo $jogos['especsRec'] ?></td>
                             </div>
-                            <td>
+                            <td align="right">
                                 <a class="btn btn-info" href="form-edit.php?idJogo=<?php echo $jogos['idJogo'] ?>">Editar</a>
                                 <br><br>
                                 <a class="btn btn-danger" href="delete.php?idJogo=<?php echo $jogos['idJogo'] ?>" 
