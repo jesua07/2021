@@ -1,0 +1,32 @@
+-- CRIANDO A DATABASE
+create database cadastroJogos;
+CREATE TABLE `jogos` (
+  idJogo INT NOT NULL AUTO_INCREMENT,
+  nomeJogo varchar(45) not null,
+  dtLancamento DATE NOT NULL,
+  desenvolvedora varchar(30) not null,
+  genero varchar(200) not null,
+  preco varchar(10) not null,
+  especsMin varchar(200) not null,
+  especsRec varchar(200) not null,
+  plataforma varchar(60) not null,
+  PRIMARY KEY (idJogo));
+-- ---------------------------------
+-- INSERT DOS JOGOS QUE IRÃO APARECER NO SITE
+insert into jogos(nomeJogo, dtLancamento, desenvolvedora, genero, preco, especsMin, especsRec, plataforma)
+values("Minecraft", "2011/11/18", "Mojang", "Aventura/SandBox", "R$150,00", "Processador: Intel Celeron J4105 ou AMD FX-4100. Memória RAM: 4 GB. Placa de vídeo: Intel HD Graphics 4000 ou AMD Radeon R5", "Processador: Intel i7-6500U ou AMD A8-6600K. Memória RAM: 8GB. Placa de vídeo: NVidia GeForce 940M ou AMD Radeon HD 8570D.", "PC, PlayStation, Xbox, Switch, Mobile"),
+("Fortnite", "2017/07/21", "Epic Games", "Battle Royale, Tiro, Sobrevivência", "Grátis", "Processador: Core i3-3225 3.3 GHz. Placa de vídeo: Intel HD 4000 ou Intel Iris Pro 5200. Memória RAM: 4 GB", "Processador: Core i5-7300U 3.5 GHz. Placa de vídeo: Nvidia GTX 960, AMD R9 280 ou GPU DX11. Memória RAM: 8 GB.", "PC, PS4, PS5, Xbox One, Xbox Series, Switch, Android,"),
+("Rainbow Six", "2015/12/01", "Ubisoft", "FPS/Estratégia", "R$60,00", "Processador: Intel Core i3 560 3.3 GHz ou AMD Phenom 3.0 GHz Placa de vídeo: NVIDIA GeForce GTX 460 ou AMD Radeon HD 5870. Memoria RAM: 6 GB.", "Processador: Intel Core i5-2500K 3.3 GHz ou AMD FX-8120 3.1 GHz. Placa de vídeo: NVIDIA GeForce GTX 760 e GTX 960 ou AMD Radeon HD 7970. Memória RAM: 8 GB", "PC, PS4, PS5, Xbox One, Xbox Series"),
+("League Of Legends", "2009/10/27", "Riot Games", "MOBA", "Grátis", "Processador: Intel Core i3-530, AMD A6-3650. Placa de vídeo: GeForce 9600 GT, AMD HD 6570, Intel HD 4600. Memória RAM: 2 GB.", "Processador: Intel Core i5-3300, AMD Ryzen 3 1200. Placa de vídeo: GeForce 560, AMD Radeon HD 6950, Intel UHD 630. Memória RAM: 4 GB.", "PC, Mobile"),
+("Valorant", "2020/06/02", "Riot Games", "FPS", "Grátis", "Processador: Intel Core 2 Duo E8400. Placa de vídeo: Intel HD 3000. Memória RAM: 4 GB", "Processador: Intel Core i3-4150. Placa de vídeo: GeForce GT 730. Memória RAM: 4 GB", "PC"),
+("Counter-Strike: Global Offensive", "2012/09/21", "Valve", "FPS", "Grátis", "Processador: Intel Core 2 Duo E6600 ou AMD Phenom X3 8750. Placa de vídeo: Shader 3.0 ou melhor. Memória RAM: 2 GB","Processador: Intel Pentium Dual-Core E5700 3 GHz ou AMD Phenom 8750 Triple-Core. Placa de vídeo: Shader 3.0 ou melhor. Memória RAM: 4 GB", "PC"),
+("Rocket League", "2015/07/07", "Psyonix", "Esportes, Simulação de Carros", "Grátis", "Processador: Dual Core 2,5 GHz. Placa de vídeo: Nvidia Geforce 760 ou AMD Radeon R7 270X. Memória RAM: 4 GB", "Processador: Quad Core 3 GHz. Placa de vídeo: Nvidia Geforce GTX 1060 ou AMD Radeon RX 470. Memória RAM: 8 GB", "PC, PS4, PS5, Xbox One, Xbox Series"),
+("Forza Horizon 5", "2021/11/05", "Microsoft", "Corrida, Simulação, Arcade", "R$250,00", "Processador: Intel Core i5 4460 ou AMD Ryzen 3 1200. Placa de vídeo: Geforce GTX 970 ou Radeon RX 470. Memória RAM: 8 GB", "Processador: Intel Core i5 8400 ou AMD Ryzen 5 1500X. Placa de Vídeo: Geforce GTX 1070 ou Radeon RX 590. Memória RAM: 16GB", "PC, Xbox One, Xbox Series"),
+("Horizon Zero Down", "2017/02/28", "Guerrilla Games", "RPG, Tiro, Ação, Aventura", "R$90,00", "Processador: Intel Core i5-2500K 3.3GHz ou AMD FX 6300 3.5GHz. Placa de vídeo: Nvidia GeForce GTX 780 ou AMD Radeon R9 290. Memória: 8 GB de RAM", "Processador: Intel Core i7-4770K 3.5GHz ou Ryzen 5 1500X 3.5GHz. Placa de vídeo: Nvidia GeForce GTX 1060 ou AMD Radeon RX 580. Memória RAM: 16 GB", "PC, PlayStation"),
+("Super Mario Odyssey", "2017/10/27", "Nintendo", "Ação, Aventura", "R$500,00","Ter um Switch", "Ter um Switch", "Switch"),
+("Spíder Man", "2018/09/07", "Sony Interactive Entertainment", "Ação, Aventura, Super-Heróis, Luta", "R$99,90", "PS4", "PS4 Pro/PS5", "PS4, PS5"),
+("FIFA 22", "2021/09/26", "Electronic Arts", "Esportes", "R$250,00", "Processador: Core i3-6100 3.7GHz ou Athlon X4 880K 4GHz. Placa de Vídeo: NVIDIA GTX 660 2 GB ou AMD Radeon HD 7850 2 GB. Memória RAM: 8 GB", "Processador: Intel i5-3550 3.40GHz ou AMD FX 8150 3.6GHz. Placa de vídeo: NVIDIA GeForce GTX 670 ou AMD Radeon R9 270X. Memória RAM: 8 GB", "PC, PS4, PS5, Xbox One, Xbox Series, Switch");
+-- ---------------------------------
+-- CONFIGURAR A TABELA
+select * from jogos;
+drop table jogos;
