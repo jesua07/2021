@@ -9,8 +9,7 @@ require 'init.php';
     <title>Cadastro de Jogo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/imagens/ETEC.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
@@ -77,8 +76,7 @@ require 'init.php';
                     <div class="col">
                         <label for="dtLancamento">Data de Lançamento: </label>
                         <br>
-                        <input type="text" class="form-control" size="35" maxlength="10" name="dtLancamento"
-                            id="dtLancamento" placeholder="dd/mm/YYYY">
+                        <input type="text" class="form-control" size="35" maxlength="10" name="dtLancamento" id="dtLancamento" placeholder="dd/mm/YYYY">
                         <br><br>
                     </div>
                 </div>
