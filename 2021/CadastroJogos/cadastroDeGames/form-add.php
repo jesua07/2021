@@ -76,7 +76,7 @@ require 'init.php';
                     <div class="col">
                         <label for="dtLancamento">Data de Lançamento: </label>
                         <br>
-                        <input type="text" class="form-control" size="35" maxlength="10" name="dtLancamento" id="dtLancamento" placeholder="dd/mm/YYYY">
+                        <input type="date" class="form-control" size="35" maxlength="10" name="dtLancamento" id="dtLancamento" placeholder="dd/mm/YYYY">
                         <br><br>
                     </div>
                 </div>
@@ -110,14 +110,22 @@ require 'init.php';
             <div class="row">
                 <div class="form-group">
                     <div class="col">
-                        <input type="submit" class="btn btn-primary" value="Cadastrar">
+                        <label for="bannerJogo">Imagem do Jogo: </label>
+                        <br>
+                        <input type="text" class="form-control" size="35" name="bannerJogo" id="bannerJogo">
+                        <br><br>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col">
-                        <input type="hidden" name="idJogo">
+                        <label for="btnCadastrar"> </label>
+                        <br>
+                        <input type="submit" class="btn btn-primary" id="btnCadastrar" value="Cadastrar">
                     </div>
                 </div>
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="idJogo">
             </div>
         </form>
 

@@ -3,7 +3,8 @@
 /**
  * Conecta com o MySQL usando PDO
  */
-function db_connect() {
+function db_connect()
+{
     $PDO = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASS);
     return $PDO;
 }
@@ -12,7 +13,8 @@ function db_connect() {
  * Converte datas entre os padrões ISO e brasileiro
  * Fonte: <a class="vglnk" href="http://rberaldo.com.br/php-conversao-de-datas-formato-brasileiro-e-formato-iso/" rel="nofollow"><span>http</span><span>://</span><span>rberaldo</span><span>.</span><span>com</span><span>.</span><span>br</span><span>/</span><span>php</span><span>-</span><span>conversao</span><span>-</span><span>de</span><span>-</span><span>datas</span><span>-</span><span>formato</span><span>-</span><span>brasileiro</span><span>-</span><span>e</span><span>-</span><span>formato</span><span>-</span><span>iso</span><span>/</span></a>
  */
-function dateConvert($dtLancamento) {
+function dateConvert($dtLancamento)
+{
     if (!strstr($dtLancamento, '/')) {
         // $date está no formato ISO (yyyy-mm-dd) e deve ser convertida
         // para dd/mm/yyyy
@@ -32,4 +34,3 @@ function dateConvert($dtLancamento) {
  *
  * Sobre a classe DateTime: <a class="vglnk" href="http://rberaldo.com.br/php-usando-a-classe-nativa-datetime/" rel="nofollow"><span>http</span><span>://</span><span>rberaldo</span><span>.</span><span>com</span><span>.</span><span>br</span><span>/</span><span>php</span><span>-</span><span>usando</span><span>-</span><span>a</span><span>-</span><span>classe</span><span>-</span><span>nativa</span><span>-</span><span>datetime</span><span>/</span></a>
  */
-

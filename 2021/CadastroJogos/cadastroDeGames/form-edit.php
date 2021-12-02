@@ -9,7 +9,7 @@ if (empty($idJogo)) {
 }
 // busca os dados do usuário a ser editado
 $PDO = db_connect();
-$sql = "SELECT nomeJogo, dtLancamento, desenvolvedora, genero, preco, especsMin, especsRec, plataforma FROM jogos WHERE idJogo = :idJogo";
+$sql = "SELECT nomeJogo, bannerJogo ,dtLancamento, desenvolvedora, genero, preco, especsMin, especsRec, plataforma FROM jogos WHERE idJogo = :idJogo";
 $stmt = $PDO->prepare($sql);
 $stmt->bindParam(':idJogo', $idJogo, PDO::PARAM_INT);
 $stmt->execute();
@@ -96,7 +96,7 @@ if (!is_array($jogos)) {
                     <div class="col">
                         <label for="dtLancamento">Data de Lançamento: </label>
                         <br>
-                        <input type="text" class="form-control" size="35" name="dtLancamento" id="dtLancamento" placeholder="dd/mm/YYYY" value="<?php echo dateConvert($jogos['dtLancamento']) ?>">
+                        <input type="date" class="form-control" size="35" name="dtLancamento" id="dtLancamento" placeholder="dd/mm/YYYY" value="<?php echo $jogos['dtLancamento'] ?>">
                         <br><br>
                     </div>
                 </div>
@@ -126,15 +126,26 @@ if (!is_array($jogos)) {
                         <br><br>
                     </div>
                 </div>
-                <br>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col">
+                        <label for="bannerJogo">Imagem do Jogo: </label>
+                        <br>
+                        <input type="text" class="form-control" size="35" name="bannerJogo" id="bannerJogo" value="<?php echo $jogos['bannerJogo'] ?>">
+                    </div>
+                </div>
                 <div class="col">
-                    <input type="hidden" class="form-control" size="35" name="idJogo" value="<?php echo $idJogo ?>">
+                    <label for="btnAlterar"> </label>
+                    <br>
+                    <input type="submit" id="btnAlterar" class="btn btn-primary" value="Alterar">
                 </div>
             </div>
-            <div class="text-left">
-                <input type="submit" id="btnAlterar" class="btn btn-primary" value="Alterar">
+    </div>
 
-        </form>
+    <input type="hidden" class="form-control" size="35" name="idJogo" value="<?php echo $idJogo ?>">
+    </form>
 </body>
 
 </html>

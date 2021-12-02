@@ -1,25 +1,25 @@
 .text-left {
     text-align: left;
-  }
+}
 
-  .table{
+.table {
     background-color: #00AB94;
-  }
+}
 
-  .big-text{
+.big-text {
     font-size: 60px;
     margin: 20px 0;
     color: #61D7A8;
-  }
-  
-  a.btn btn-first{
+}
+
+a.btn btn-first {
     margin: 30px 10px;
     width: 150px;
     padding: 10px;
     border-radius: 20px;
-  }
+}
 
-  a.btn-first{
+a.btn-first {
     background-color: #00AB94;
     color: #fff;
     display: block;
@@ -30,101 +30,112 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  a.btn:hover{
-    background:rgb(0, 126, 109);
+a.btn:hover {
+    background: rgb(0, 126, 109);
     border: none;
     color: #fff;
     box-shadow: 5px 5px 10px #999;
     transition: 0.3s;
-  }
+}
 
-  .img-responsive{
+.img-responsive {
     height: 500px;
     width: 500px;
-  }
+}
 
-  .imagem_circular{
-    float:left;
-    margin-left:120px;
+.imagem_circular {
+    float: left;
+    margin-left: 120px;
     margin-top: 40px;
     width: 200px;
     height: 200px;
-    border-radius: 50%; /* Modified*/
+    border-radius: 50%;
+    /* Modified*/
     /*overflow:hidden;*/
     background-color: #61D7A8;
-    border: 4px solid #61D7A8; 
+    border: 4px solid #61D7A8;
 }
 
-.texto_centro{
-  
-  text-align: justify;
-  width: 200px;
+.texto_centro {
+    text-align: justify;
+    width: 200px;
 }
+
 .card {
-  align-items: center;
-  width: 330px;
-  box-shadow: 0 4px 8px 0 gray;
-  margin: 8px;
+    align-items: center;
+    width: 330px;
+    box-shadow: 0 4px 8px 0 gray;
+    margin: 8px;
 }
-  .titulo {
-    color: rgb(3, 190, 165);
-  }
 
-  .botaoGit {
+.titulo {
+    color: rgb(3, 190, 165);
+}
+
+.botaoGit {
     border: none;
     outline: 0;
     text-align: center;
     background: none;
     cursor: pointer;
     width: 0px;
-  }
- .fotoDesenvolvedores{
-  border: 1px solid #61D7A8; 
- }
- 
- .segundoTitulo{
-  color: #55c99a;
- }
-
- .textoEtecNavbar{
-  color: #55c99a;
-  font-size: 25px;
- }
-
- .textoEtecNavbar:hover{
-  color: #47a881;
-  font-size: 25px;
-  transition: 0.1s;
- }
-
- table.tabelaVerdinha {
-   font-family: sans-serif;
-  background-color: #FFFFFF;
-  width:100%;
-  border-collapse: collapse;
-}
-table.tabelaVerdinha td, table.tabelaVerdinha th {
-  border: 0px solid #555555;
-  padding: 10px 10px;
-}
-table.tabelaVerdinha tbody td {
-  font-size: 16px;
-  text-align: center;
-  color: #000000;
-}
-table.tabelaVerdinha thead {
-  background: #00AB94;
-}
-table.tabelaVerdinha thead th {
-  font-size: 17px;
-  font-weight: bold;
-  color: #FFFFFF;
-  text-align: center;
 }
 
-.meioGrande{
-  width: 100%;
+.fotoDesenvolvedores {
+    border: 1px solid #61D7A8;
 }
 
+.segundoTitulo {
+    color: #55c99a;
+}
+
+.textoEtecNavbar {
+    color: #55c99a;
+    font-size: 25px;
+}
+
+.textoEtecNavbar:hover {
+    color: #47a881;
+    font-size: 25px;
+    transition: 0.1s;
+}
+
+.meioGrande {
+    width: 100%;
+}
+
+input[type="date"] {
+    width: 317px;
+}
+
+.imgJogo {
+    border: 2px solid #61D7A8;
+    border-radius: 3%;
+}
+
+.conteudoTxt {
+    font-size: 16px;
+}
+
+.tituloJogos {
+    color: rgb(3, 190, 165);
+    font-size: 20px;
+}
+
+#btnEditar {
+    width: 280px;
+}
+
+#btnRemover {
+    width: 280px;
+}
+
+#btnCadastrar {
+    width: 317px;
+}
+
+#btnAlterar {
+    width: 317px;
+}

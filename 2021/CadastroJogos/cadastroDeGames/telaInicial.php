@@ -56,52 +56,87 @@ $stmt->execute();
         </div>
         <h2 class="titulo">Lista de Jogos</h2>
         <p>Total de Jogos: <?php echo $total ?></p>
+        <br>
         <?php if ($total > 0) : ?>
-            <div class="shadow p-3 mb-5 bg-white rounded">
-                <table class="tabelaVerdinha">
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Desenvolvedora</th>
-                            <th>Gênero</th>
-                            <th>Preço</th>
-                            <th>Data de lançamento</th>
-                            <th>Plataforma</th>
-                            <th>Especificações minimas</th>
-                            <th>Especificações recomendadas</th>
-                            <th>Ajustes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php while ($jogos = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
-                            <tr>
-                                <td><?php echo $jogos['nomeJogo'] ?></td>
-                                <td><?php echo $jogos['desenvolvedora'] ?></td>
-                                <td><?php echo $jogos['genero'] ?></td>
-                                <td><?php echo $jogos['preco'] ?></td>
-                                <td><?php echo dateConvert($jogos['dtLancamento']) ?></td>
-                                <td><?php echo $jogos['plataforma'] ?></td>
-                                <div class="max-width">
-                                    <td><?php echo $jogos['especsMin'] ?></td>
-                                    <td><?php echo $jogos['especsRec'] ?></td>
-                                </div>
-                                <td align="right">
-                                    <a class="btn btn-info" href="form-edit.php?idJogo=<?php echo $jogos['idJogo'] ?>">Editar</a>
-                                    <br><br>
-                                    <a class="btn btn-danger" href="delete.php?idJogo=<?php echo $jogos['idJogo'] ?>" onclick="return confirm('Tem certeza de que deseja remover?');">
-                                        Remover
-                                    </a>
-                                </td>
-
-                            </tr>
-                        <?php endwhile; ?>
-                    </tbody>
-                </table>
-            <?php else : ?>
-                <p>Nenhum jogo cadastrado</p>
-            <?php endif; ?>
-            </div>
-            <p><a class="btn btn-success" role="button" href="form-add.php">Adicionar Jogo</a></p>
+            <?php while ($jogos = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="imgJogo" width="350px" height="550px" src="<?php echo $jogos['bannerJogo'] ?>">
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                        <h1 class="titulo"><?php echo htmlspecialchars($jogos['nomeJogo']) ?></h1>
+                        </p>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <p class="tituloJogos">Desenvolvedora:</p>
+                                <p class="conteudoTxt">
+                                    <?php echo htmlspecialchars($jogos['desenvolvedora']) ?>
+                                </p>
+                            </div>
+                            <div class="col-sm-5">
+                                <p class="tituloJogos">Gênero:</p>
+                                <p class="conteudoTxt">
+                                    <?php echo htmlspecialchars($jogos['genero']) ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <p class="tituloJogos">Preço:</p>
+                                <p class="conteudoTxt">
+                                    <?php echo htmlspecialchars($jogos['preco']) ?>
+                                </p>
+                            </div>
+                            <div class="col-sm-5">
+                                <p class="tituloJogos">Data de Lançamento:</p>
+                                <p class="conteudoTxt">
+                                    <?php echo dateConvert($jogos['dtLancamento']) ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <p class="tituloJogos">Especificações Mínimas:</p>
+                                <p class="conteudoTxt">
+                                    <?php echo htmlspecialchars($jogos['especsMin']) ?>
+                                </p>
+                            </div>
+                            <div class="col-sm-5">
+                                <p class="tituloJogos">Especificações Recomendadas:</p>
+                                <p class="conteudoTxt">
+                                    <?php echo htmlspecialchars($jogos['especsRec']) ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <p class="tituloJogos">Plataforma(s):</p>
+                                <p class="conteudoTxt">
+                                    <?php echo htmlspecialchars($jogos['plataforma']) ?>
+                                </p>
+                            </div>
+                            <div class="col-sm-5">
+                                <a class="btn btn-info" id="btnEditar" href="form-edit.php?idJogo=<?php echo $jogos['idJogo'] ?>">Editar</a>
+                                <br><br>
+                                <a class="btn btn-danger" id="btnRemover" href="delete.php?idJogo=<?php echo $jogos['idJogo'] ?>" onclick="return confirm('Tem certeza de que deseja remover?');">
+                                    Remover
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+            <?php endwhile; ?>
+            </tbody>
+            </table>
+        <?php else : ?>
+            <p>Nenhum jogo cadastrado</p>
+        <?php endif; ?>
+        <br><br>
+        <p><a class="btn btn-success" role="button" href="form-add.php">Adicionar Jogo</a></p>
+    </div>
 </body>
 
 </html>
